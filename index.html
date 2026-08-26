@@ -2,8 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#245642" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="theme-color"
+    content="#245642"
+  />
 
   <meta
     name="description"
@@ -13,16 +21,26 @@
   <title>Kátia Gouveia | Psicanalista Clínica</title>
 
   <style>
+
+    /* ==============================
+       PALETA DE CORES
+    ============================== */
+
     :root {
       --verde: #245642;
       --salvia: #8FAF9B;
       --nude: #E8D9CC;
       --vinho: #743F4A;
       --dourado: #B89A5A;
-      --off: #F8F5EF;
+      --off: #EDE3D8;
       --grafite: #343936;
       --branco: #FFFDF9;
     }
+
+
+    /* ==============================
+       CONFIGURAÇÕES GERAIS
+    ============================== */
 
     * {
       box-sizing: border-box;
@@ -33,7 +51,9 @@
     }
 
     body {
+
       margin: 0;
+
       min-height: 100vh;
 
       font-family:
@@ -47,20 +67,18 @@
 
       color: var(--grafite);
 
-      /* Círculo superior esquerdo removido */
+      /* Fundo nude mais presente */
+
       background:
-        radial-gradient(
-          circle at 88% 18%,
-          rgba(232, 217, 204, .85),
-          transparent 25%
-        ),
         linear-gradient(
           180deg,
-          #fbf8f2 0%,
-          var(--off) 100%
+          #E5D8CA 0%,
+          #F0E7DD 45%,
+          #E8D9CC 100%
         );
 
       display: flex;
+
       justify-content: center;
 
       padding: 24px 16px;
@@ -68,155 +86,209 @@
       overflow-x: hidden;
     }
 
+
     /* ==============================
        CONTAINER PRINCIPAL
     ============================== */
 
     .page {
+
       position: relative;
 
       width: min(100%, 520px);
+
       min-height: calc(100vh - 48px);
 
-      background: rgba(255, 253, 249, .88);
+      /* Fundo menos branco */
 
-      border: 1px solid rgba(184, 154, 90, .28);
+      background:
+        rgba(248, 241, 233, .96);
+
+      border:
+        1px solid rgba(184, 154, 90, .38);
+
       border-radius: 34px;
 
       box-shadow:
-        0 22px 60px rgba(36, 86, 66, .12);
+        0 22px 60px rgba(36, 86, 66, .14);
 
-      padding: 34px 24px 28px;
+      padding:
+        34px 24px 28px;
 
       overflow: hidden;
 
-      backdrop-filter: blur(8px);
+      backdrop-filter:
+        blur(8px);
     }
 
+
     /* ==============================
-       FORMAS DECORATIVAS
+       FORMAS DECORATIVAS INFERIORES
     ============================== */
 
     .shape {
+
       position: absolute;
+
       border-radius: 999px;
+
       pointer-events: none;
+
       filter: blur(.2px);
     }
 
-    /* Forma vinho superior */
-    .shape.one {
-      width: 180px;
-      height: 180px;
 
-      top: -80px;
-      right: -60px;
+    /* Verde inferior */
 
-      background: rgba(116, 63, 74, .92);
-
-      border:
-        2px solid rgba(184, 154, 90, .75);
-    }
-
-    /* Forma verde inferior */
     .shape.two {
+
       width: 220px;
+
       height: 110px;
 
       left: -75px;
+
       bottom: -55px;
 
-      background: var(--verde);
+      background:
+        var(--verde);
 
-      transform: rotate(-8deg);
+      transform:
+        rotate(-8deg);
     }
 
-    /* Forma sálvia inferior */
+
+    /* Sálvia inferior */
+
     .shape.three {
+
       width: 170px;
+
       height: 85px;
 
       left: -55px;
+
       bottom: -10px;
 
-      background: rgba(143, 175, 155, .65);
+      background:
+        rgba(143, 175, 155, .65);
 
-      transform: rotate(6deg);
+      transform:
+        rotate(6deg);
     }
+
 
     /* ==============================
        FOLHAS DECORATIVAS
     ============================== */
 
     .leaf {
+
       position: absolute;
 
       width: 88px;
+
       height: 88px;
 
       opacity: .18;
+
+      pointer-events: none;
     }
+
 
     .leaf.left {
+
       left: -14px;
+
       top: 120px;
 
-      transform: rotate(-18deg);
+      transform:
+        rotate(-18deg);
     }
+
 
     .leaf.right {
+
       right: -12px;
+
       bottom: 145px;
 
-      transform: rotate(22deg);
+      transform:
+        rotate(22deg);
     }
+
 
     /* ==============================
        LOGOMARCA
     ============================== */
 
     .logo-wrap {
+
       position: relative;
+
       z-index: 2;
 
       display: flex;
+
       justify-content: center;
 
-      margin: 0 auto 12px;
+      margin:
+        0 auto 12px;
     }
 
+
     .logo {
-      width: min(82%, 330px);
+
+      width:
+        min(82%, 330px);
 
       display: block;
 
-      mix-blend-mode: multiply;
+      mix-blend-mode:
+        multiply;
     }
 
+
     /* ==============================
-       TEXTO SUPERIOR
+       BOAS-VINDAS
     ============================== */
 
     .eyebrow {
+
       position: relative;
+
       z-index: 2;
 
-      margin: 8px 0 8px;
+      margin:
+        8px 0 8px;
 
       text-align: center;
 
-      color: var(--vinho);
+      color:
+        var(--vinho);
 
-      font-size: .78rem;
-      letter-spacing: .18em;
+      font-size:
+        .78rem;
 
-      text-transform: uppercase;
+      letter-spacing:
+        .18em;
 
-      font-weight: 700;
+      text-transform:
+        uppercase;
+
+      font-weight:
+        700;
     }
 
+
+    /* ==============================
+       TÍTULO PRINCIPAL
+    ============================== */
+
     h1 {
+
       position: relative;
+
       z-index: 2;
 
       margin: 0;
@@ -228,74 +300,111 @@
         "Times New Roman",
         serif;
 
-      font-size: clamp(2rem, 7vw, 3rem);
+      font-size:
+        clamp(2rem, 7vw, 3rem);
 
-      line-height: 1.06;
+      line-height:
+        1.06;
 
-      color: var(--verde);
+      color:
+        var(--verde);
 
-      font-weight: 500;
+      font-weight:
+        500;
     }
 
-    .intro {
-      position: relative;
-      z-index: 2;
-
-      margin: 18px auto 22px;
-
-      max-width: 400px;
-
-      text-align: center;
-
-      font-size: 1rem;
-      line-height: 1.65;
-
-      color: #4b514d;
-    }
-
-    .intro strong {
-      color: var(--vinho);
-    }
 
     /* ==============================
-       DIVISOR
+       TEXTO INTRODUTÓRIO
+    ============================== */
+
+    .intro {
+
+      position: relative;
+
+      z-index: 2;
+
+      margin:
+        18px auto 22px;
+
+      max-width:
+        400px;
+
+      text-align:
+        center;
+
+      font-size:
+        1rem;
+
+      line-height:
+        1.65;
+
+      color:
+        #4b514d;
+    }
+
+
+    .intro strong {
+
+      color:
+        var(--vinho);
+    }
+
+
+    /* ==============================
+       DIVISOR DOURADO
     ============================== */
 
     .divider {
+
       position: relative;
+
       z-index: 2;
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
 
       gap: 10px;
 
-      margin: 0 auto 24px;
+      margin:
+        0 auto 24px;
 
-      color: var(--dourado);
+      color:
+        var(--dourado);
     }
+
 
     .divider::before,
     .divider::after {
+
       content: "";
 
-      width: 52px;
-      height: 1px;
+      width:
+        52px;
+
+      height:
+        1px;
 
       background:
-        rgba(184, 154, 90, .65);
+        rgba(184, 154, 90, .75);
     }
+
 
     /* ==============================
        BOTÃO WHATSAPP
     ============================== */
 
     .cta {
+
       position: relative;
+
       z-index: 2;
 
       display: flex;
+
       align-items: center;
 
       gap: 14px;
@@ -312,213 +421,335 @@
         );
 
       border:
-        1px solid rgba(255, 255, 255, .2);
+        1px solid
+        rgba(255, 255, 255, .2);
 
-      padding: 18px 18px;
+      padding:
+        18px;
 
-      border-radius: 22px;
+      border-radius:
+        22px;
 
       box-shadow:
-        0 12px 24px rgba(36, 86, 66, .20);
+        0 12px 24px
+        rgba(36, 86, 66, .20);
 
       transition:
         transform .2s ease,
         box-shadow .2s ease;
     }
 
+
     .cta:hover {
-      transform: translateY(-2px);
+
+      transform:
+        translateY(-2px);
 
       box-shadow:
-        0 16px 30px rgba(36, 86, 66, .25);
+        0 16px 30px
+        rgba(36, 86, 66, .25);
     }
 
+
+    /* Ícone WhatsApp */
+
     .icon {
-      width: 48px;
-      height: 48px;
 
-      border-radius: 50%;
+      width:
+        48px;
 
-      display: grid;
-      place-items: center;
+      height:
+        48px;
 
-      flex: 0 0 48px;
+      border-radius:
+        50%;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      flex:
+        0 0 48px;
 
       background:
         rgba(255, 255, 255, .13);
 
       border:
-        1px solid rgba(255, 255, 255, .35);
+        1px solid
+        rgba(255, 255, 255, .35);
     }
+
 
     .icon svg {
-      width: 25px;
-      height: 25px;
+
+      width:
+        25px;
+
+      height:
+        25px;
     }
+
+
+    /* Texto botão */
 
     .cta-text {
-      display: flex;
-      flex-direction: column;
 
-      gap: 2px;
+      display:
+        flex;
 
-      min-width: 0;
+      flex-direction:
+        column;
+
+      gap:
+        2px;
+
+      min-width:
+        0;
     }
 
+
     .cta-title {
+
       font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-      font-size: 1.15rem;
+      font-size:
+        1.15rem;
 
-      letter-spacing: .02em;
+      letter-spacing:
+        .02em;
     }
 
+
     .cta-sub {
-      font-size: .85rem;
+
+      font-size:
+        .85rem;
 
       color:
         rgba(255, 255, 255, .78);
     }
 
+
     .arrow {
-      margin-left: auto;
 
-      font-size: 1.6rem;
+      margin-left:
+        auto;
 
-      line-height: 1;
+      font-size:
+        1.6rem;
 
-      opacity: .9;
+      line-height:
+        1;
+
+      opacity:
+        .9;
     }
 
+
     /* ==============================
-       MODALIDADES DE ATENDIMENTO
+       MODALIDADES
     ============================== */
 
     .info {
+
       position: relative;
+
       z-index: 2;
 
-      margin-top: 16px;
+      margin-top:
+        16px;
 
-      display: flex;
-      justify-content: center;
+      display:
+        flex;
 
-      gap: 8px;
+      justify-content:
+        center;
 
-      flex-wrap: wrap;
+      gap:
+        8px;
+
+      flex-wrap:
+        wrap;
     }
+
 
     .pill {
+
       background:
-        rgba(232, 217, 204, .64);
+        rgba(232, 217, 204, .78);
 
       border:
-        1px solid rgba(116, 63, 74, .12);
+        1px solid
+        rgba(116, 63, 74, .16);
 
-      color: var(--vinho);
+      color:
+        var(--vinho);
 
-      padding: 8px 12px;
+      padding:
+        8px 12px;
 
-      border-radius: 999px;
+      border-radius:
+        999px;
 
-      font-size: .82rem;
+      font-size:
+        .82rem;
 
-      font-weight: 600;
+      font-weight:
+        600;
     }
+
 
     /* ==============================
        TEXTO COMPLEMENTAR
     ============================== */
 
     .note {
-      position: relative;
-      z-index: 2;
 
-      margin: 24px auto 0;
+      position:
+        relative;
 
-      text-align: center;
+      z-index:
+        2;
 
-      max-width: 390px;
+      margin:
+        24px auto 0;
 
-      color: #5a625d;
+      text-align:
+        center;
 
-      font-size: .9rem;
+      max-width:
+        390px;
 
-      line-height: 1.6;
+      color:
+        #5a625d;
+
+      font-size:
+        .9rem;
+
+      line-height:
+        1.6;
     }
+
 
     /* ==============================
        INSTAGRAM
     ============================== */
 
     .instagram {
-      position: relative;
-      z-index: 2;
 
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      position:
+        relative;
 
-      gap: 8px;
+      z-index:
+        2;
 
-      margin: 18px auto 0;
+      display:
+        inline-flex;
 
-      width: 100%;
+      align-items:
+        center;
 
-      color: var(--verde);
+      justify-content:
+        center;
 
-      text-decoration: none;
+      margin:
+        18px auto 0;
 
-      font-weight: 700;
+      width:
+        100%;
 
-      font-size: .92rem;
+      color:
+        var(--verde);
+
+      text-decoration:
+        none;
+
+      font-weight:
+        700;
+
+      font-size:
+        .92rem;
+
+      transition:
+        color .2s ease;
     }
+
 
     .instagram:hover {
-      color: var(--vinho);
+
+      color:
+        var(--vinho);
     }
+
 
     /* ==============================
        RODAPÉ
     ============================== */
 
     footer {
-      position: relative;
-      z-index: 2;
 
-      margin-top: 26px;
+      position:
+        relative;
 
-      text-align: center;
+      z-index:
+        2;
 
-      font-size: .74rem;
+      margin-top:
+        26px;
 
-      color: #7a817d;
+      text-align:
+        center;
+
+      font-size:
+        .74rem;
+
+      color:
+        #6f7672;
     }
+
+
+    /* Crédito Rodrigues Digital */
 
     .creditos {
-      margin-top: 6px;
 
-      font-size: .72rem;
+      margin-top:
+        7px;
+
+      font-size:
+        .72rem;
     }
+
 
     .creditos a {
-      color: var(--dourado);
 
-      text-decoration: none;
+      color:
+        var(--dourado);
 
-      font-weight: 600;
+      text-decoration:
+        none;
 
-      transition: opacity .2s ease;
+      font-weight:
+        700;
+
+      transition:
+        opacity .2s ease;
     }
+
 
     .creditos a:hover {
-      opacity: .7;
 
-      text-decoration: underline;
+      opacity:
+        .7;
+
+      text-decoration:
+        underline;
     }
+
 
     /* ==============================
        RESPONSIVIDADE
@@ -526,33 +757,64 @@
 
     @media (max-width: 380px) {
 
-      .page {
-        padding: 28px 18px 24px;
+      body {
 
-        border-radius: 26px;
+        padding:
+          14px 10px;
       }
 
+
+      .page {
+
+        padding:
+          28px 18px 24px;
+
+        border-radius:
+          26px;
+      }
+
+
       .cta {
-        padding: 16px;
+
+        padding:
+          16px;
+      }
+
+
+      .cta-title {
+
+        font-size:
+          1.05rem;
       }
 
     }
 
   </style>
+
 </head>
+
 
 <body>
 
+
   <main class="page">
 
-    <!-- FORMAS DECORATIVAS -->
 
-    <div class="shape one"></div>
+    <!-- ==========================
+         FORMAS DECORATIVAS
+    =========================== -->
+
+
     <div class="shape two"></div>
+
     <div class="shape three"></div>
 
 
-    <!-- FOLHA ESQUERDA -->
+
+    <!-- ==========================
+         FOLHA ESQUERDA
+    =========================== -->
+
 
     <svg
       class="leaf left"
@@ -567,6 +829,7 @@
         fill="none"
       />
 
+
       <ellipse
         cx="40"
         cy="34"
@@ -576,6 +839,7 @@
         transform="rotate(-38 40 34)"
       />
 
+
       <ellipse
         cx="58"
         cy="48"
@@ -584,6 +848,7 @@
         fill="#245642"
         transform="rotate(34 58 48)"
       />
+
 
       <ellipse
         cx="35"
@@ -597,7 +862,11 @@
     </svg>
 
 
-    <!-- FOLHA DIREITA -->
+
+    <!-- ==========================
+         FOLHA DIREITA
+    =========================== -->
+
 
     <svg
       class="leaf right"
@@ -612,6 +881,7 @@
         fill="none"
       />
 
+
       <ellipse
         cx="40"
         cy="34"
@@ -621,6 +891,7 @@
         transform="rotate(-38 40 34)"
       />
 
+
       <ellipse
         cx="58"
         cy="48"
@@ -629,6 +900,7 @@
         fill="#245642"
         transform="rotate(34 58 48)"
       />
+
 
       <ellipse
         cx="35"
@@ -642,7 +914,11 @@
     </svg>
 
 
-    <!-- LOGOMARCA -->
+
+    <!-- ==========================
+         LOGOMARCA
+    =========================== -->
+
 
     <div class="logo-wrap">
 
@@ -655,152 +931,266 @@
     </div>
 
 
-    <!-- APRESENTAÇÃO -->
+
+    <!-- ==========================
+         APRESENTAÇÃO
+    =========================== -->
+
 
     <div class="eyebrow">
+
       Seja bem-vinda
+
     </div>
 
+
     <h1>
+
       Um espaço para<br>
+
       se compreender melhor.
+
     </h1>
+
 
     <p class="intro">
 
       Escuta, reflexão e transformação para
+
       <strong>mulheres</strong>
+
       que desejam olhar para si e para a própria
+
       história com novos sentidos.
 
     </p>
 
 
-    <!-- DIVISOR -->
+
+    <!-- ==========================
+         DIVISOR
+    =========================== -->
+
 
     <div class="divider">
+
       ✦
+
     </div>
 
 
-    <!-- BOTÃO WHATSAPP -->
+
+    <!-- ==========================
+         WHATSAPP
+    =========================== -->
+
 
     <a
+
       class="cta"
+
       href="https://wa.me/5527995337988?text=Olá%2C%20Kátia!%20Conheci%20seu%20trabalho%20pelo%20Instagram%20e%20gostaria%20de%20saber%20mais."
+
       target="_blank"
+
       rel="noopener noreferrer"
+
       aria-label="Conhecer o trabalho de Kátia Gouveia pelo WhatsApp"
+
     >
+
+
+      <!-- ÍCONE -->
+
 
       <span
         class="icon"
         aria-hidden="true"
       >
 
+
         <svg
           viewBox="0 0 24 24"
           fill="none"
         >
 
-          <path
-            d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9A8.4 8.4 0 1 1 20.5 11.7Z"
-            stroke="currentColor"
-            stroke-width="1.8"
-          />
 
           <path
-            d="M8.3 7.9c.3-.7.6-.7 1-.7h.3c.2 0 .4 0 .6.5l.8 1.9c.1.3.1.5-.1.7l-.6.7c-.2.2-.3.4-.1.7.4.8 1 1.5 1.8 2 .8.6 1.5.8 1.8 1 .3.1.5.1.7-.1l.9-1.1c.2-.2.4-.3.7-.2l1.9.9c.3.2.5.2.5.4 0 .2 0 1-.4 1.8-.4.8-1.7 1.5-2.4 1.6-.7.1-1.6.2-4.5-.9-3.7-1.5-6.1-5.3-6.3-5.6-.2-.3-1.5-2-.1-4.2Z"
-            fill="currentColor"
+
+            d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9A8.4 8.4 0 1 1 20.5 11.7Z"
+
+            stroke="currentColor"
+
+            stroke-width="1.8"
+
           />
+
+
+          <path
+
+            d="M8.3 7.9c.3-.7.6-.7 1-.7h.3c.2 0 .4 0 .6.5l.8 1.9c.1.3.1.5-.1.7l-.6.7c-.2.2-.3.4-.1.7.4.8 1 1.5 1.8 2 .8.6 1.5.8 1.8 1 .3.1.5.1.7-.1l.9-1.1c.2-.2.4-.3.7-.2l1.9.9c.3.2.5.2.5.4 0 .2 0 1-.4 1.8-.4.8-1.7 1.5-2.4 1.6-.7.1-1.6.2-4.5-.9-3.7-1.5-6.1-5.3-6.3-5.6-.2-.3-1.5-2-.1-4.2Z"
+
+            fill="currentColor"
+
+          />
+
 
         </svg>
 
+
       </span>
+
+
+
+      <!-- TEXTO DO BOTÃO -->
 
 
       <span class="cta-text">
 
+
         <span class="cta-title">
+
           Conhecer meu trabalho
+
         </span>
+
 
         <span class="cta-sub">
+
           Fale comigo pelo WhatsApp
+
         </span>
 
+
       </span>
+
 
 
       <span class="arrow">
+
         ›
+
       </span>
+
 
     </a>
 
 
-    <!-- ATENDIMENTOS -->
+
+    <!-- ==========================
+         ATENDIMENTOS
+    =========================== -->
+
 
     <div class="info">
 
-      <span class="pill">
-        Atendimento presencial
-      </span>
 
       <span class="pill">
-        Atendimento online
+
+        Atendimento presencial
+
       </span>
+
+
+      <span class="pill">
+
+        Atendimento online
+
+      </span>
+
 
     </div>
 
 
-    <!-- TEXTO COMPLEMENTAR -->
+
+    <!-- ==========================
+         TEXTO COMPLEMENTAR
+    =========================== -->
+
 
     <p class="note">
 
       Um primeiro contato para conhecer minha forma de trabalho
+
       e entender como a psicanálise pode fazer parte do seu processo.
 
     </p>
 
 
-    <!-- INSTAGRAM -->
+
+    <!-- ==========================
+         INSTAGRAM
+    =========================== -->
+
 
     <a
+
       class="instagram"
+
       href="https://www.instagram.com/katiagouveia.psi/"
+
       target="_blank"
+
       rel="noopener noreferrer"
+
+      aria-label="Instagram de Kátia Gouveia"
+
     >
+
       @katiagouveia.psi
+
     </a>
 
 
-    <!-- RODAPÉ -->
+
+    <!-- ==========================
+         RODAPÉ
+    =========================== -->
+
 
     <footer>
 
+
       <div>
+
         © 2026 Kátia Gouveia · Psicanalista Clínica
+
       </div>
+
+
 
       <div class="creditos">
 
+
         Criação:
 
+
         <a
+
           href="https://rodriguesdigital.tec.br/"
+
           target="_blank"
+
           rel="noopener noreferrer"
+
+          aria-label="Site da Rodrigues Digital"
+
         >
+
           Rodrigues Digital
+
         </a>
+
 
       </div>
 
+
     </footer>
+
 
   </main>
 
+
 </body>
+
 </html>
