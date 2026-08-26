@@ -21,11 +21,6 @@
   <title>Kátia Gouveia | Psicanalista Clínica</title>
 
   <style>
-
-    /* ==============================
-       PALETA DE CORES
-    ============================== */
-
     :root {
       --verde: #245642;
       --salvia: #8FAF9B;
@@ -37,11 +32,6 @@
       --branco: #FFFDF9;
     }
 
-
-    /* ==============================
-       CONFIGURAÇÕES GERAIS
-    ============================== */
-
     * {
       box-sizing: border-box;
     }
@@ -51,9 +41,7 @@
     }
 
     body {
-
       margin: 0;
-
       min-height: 100vh;
 
       font-family:
@@ -67,8 +55,6 @@
 
       color: var(--grafite);
 
-      /* Fundo nude mais presente */
-
       background:
         linear-gradient(
           180deg,
@@ -78,7 +64,6 @@
         );
 
       display: flex;
-
       justify-content: center;
 
       padding: 24px 16px;
@@ -86,20 +71,12 @@
       overflow-x: hidden;
     }
 
-
-    /* ==============================
-       CONTAINER PRINCIPAL
-    ============================== */
-
     .page {
-
       position: relative;
 
       width: min(100%, 520px);
 
       min-height: calc(100vh - 48px);
-
-      /* Fundo menos branco */
 
       background:
         rgba(248, 241, 233, .96);
@@ -121,13 +98,7 @@
         blur(8px);
     }
 
-
-    /* ==============================
-       FORMAS DECORATIVAS INFERIORES
-    ============================== */
-
     .shape {
-
       position: absolute;
 
       border-radius: 999px;
@@ -137,11 +108,7 @@
       filter: blur(.2px);
     }
 
-
-    /* Verde inferior */
-
     .shape.two {
-
       width: 220px;
 
       height: 110px;
@@ -157,11 +124,7 @@
         rotate(-8deg);
     }
 
-
-    /* Sálvia inferior */
-
     .shape.three {
-
       width: 170px;
 
       height: 85px;
@@ -177,13 +140,7 @@
         rotate(6deg);
     }
 
-
-    /* ==============================
-       FOLHAS DECORATIVAS
-    ============================== */
-
     .leaf {
-
       position: absolute;
 
       width: 88px;
@@ -195,9 +152,7 @@
       pointer-events: none;
     }
 
-
     .leaf.left {
-
       left: -14px;
 
       top: 120px;
@@ -206,9 +161,7 @@
         rotate(-18deg);
     }
 
-
     .leaf.right {
-
       right: -12px;
 
       bottom: 145px;
@@ -217,13 +170,7 @@
         rotate(22deg);
     }
 
-
-    /* ==============================
-       LOGOMARCA
-    ============================== */
-
     .logo-wrap {
-
       position: relative;
 
       z-index: 2;
@@ -236,11 +183,9 @@
         0 auto 12px;
     }
 
-
     .logo {
-
       width:
-        min(82%, 330px);
+        min(74%, 300px);
 
       display: block;
 
@@ -248,13 +193,7 @@
         multiply;
     }
 
-
-    /* ==============================
-       BOAS-VINDAS
-    ============================== */
-
     .eyebrow {
-
       position: relative;
 
       z-index: 2;
@@ -280,13 +219,7 @@
         700;
     }
 
-
-    /* ==============================
-       TÍTULO PRINCIPAL
-    ============================== */
-
     h1 {
-
       position: relative;
 
       z-index: 2;
@@ -313,13 +246,7 @@
         500;
     }
 
-
-    /* ==============================
-       TEXTO INTRODUTÓRIO
-    ============================== */
-
     .intro {
-
       position: relative;
 
       z-index: 2;
@@ -343,20 +270,12 @@
         #4b514d;
     }
 
-
     .intro strong {
-
       color:
         var(--vinho);
     }
 
-
-    /* ==============================
-       DIVISOR DOURADO
-    ============================== */
-
     .divider {
-
       position: relative;
 
       z-index: 2;
@@ -376,10 +295,8 @@
         var(--dourado);
     }
 
-
     .divider::before,
     .divider::after {
-
       content: "";
 
       width:
@@ -392,13 +309,7 @@
         rgba(184, 154, 90, .75);
     }
 
-
-    /* ==============================
-       BOTÃO WHATSAPP
-    ============================== */
-
     .cta {
-
       position: relative;
 
       z-index: 2;
@@ -421,8 +332,7 @@
         );
 
       border:
-        1px solid
-        rgba(255, 255, 255, .2);
+        1px solid rgba(255, 255, 255, .2);
 
       padding:
         18px;
@@ -439,9 +349,7 @@
         box-shadow .2s ease;
     }
 
-
     .cta:hover {
-
       transform:
         translateY(-2px);
 
@@ -450,11 +358,7 @@
         rgba(36, 86, 66, .25);
     }
 
-
-    /* Ícone WhatsApp */
-
     .icon {
-
       width:
         48px;
 
@@ -481,9 +385,7 @@
         rgba(255, 255, 255, .35);
     }
 
-
     .icon svg {
-
       width:
         25px;
 
@@ -491,11 +393,7 @@
         25px;
     }
 
-
-    /* Texto botão */
-
     .cta-text {
-
       display:
         flex;
 
@@ -509,9 +407,7 @@
         0;
     }
 
-
     .cta-title {
-
       font-family:
         Georgia,
         "Times New Roman",
@@ -524,9 +420,7 @@
         .02em;
     }
 
-
     .cta-sub {
-
       font-size:
         .85rem;
 
@@ -534,9 +428,7 @@
         rgba(255, 255, 255, .78);
     }
 
-
     .arrow {
-
       margin-left:
         auto;
 
@@ -550,13 +442,7 @@
         .9;
     }
 
-
-    /* ==============================
-       MODALIDADES
-    ============================== */
-
     .info {
-
       position: relative;
 
       z-index: 2;
@@ -577,9 +463,7 @@
         wrap;
     }
 
-
     .pill {
-
       background:
         rgba(232, 217, 204, .78);
 
@@ -603,13 +487,7 @@
         600;
     }
 
-
-    /* ==============================
-       TEXTO COMPLEMENTAR
-    ============================== */
-
     .note {
-
       position:
         relative;
 
@@ -635,13 +513,7 @@
         1.6;
     }
 
-
-    /* ==============================
-       INSTAGRAM
-    ============================== */
-
     .instagram {
-
       position:
         relative;
 
@@ -679,20 +551,12 @@
         color .2s ease;
     }
 
-
     .instagram:hover {
-
       color:
         var(--vinho);
     }
 
-
-    /* ==============================
-       RODAPÉ
-    ============================== */
-
     footer {
-
       position:
         relative;
 
@@ -712,11 +576,7 @@
         #6f7672;
     }
 
-
-    /* Crédito Rodrigues Digital */
-
     .creditos {
-
       margin-top:
         7px;
 
@@ -724,9 +584,7 @@
         .72rem;
     }
 
-
     .creditos a {
-
       color:
         var(--dourado);
 
@@ -740,9 +598,7 @@
         opacity .2s ease;
     }
 
-
     .creditos a:hover {
-
       opacity:
         .7;
 
@@ -750,22 +606,14 @@
         underline;
     }
 
-
-    /* ==============================
-       RESPONSIVIDADE
-    ============================== */
-
     @media (max-width: 380px) {
 
       body {
-
         padding:
           14px 10px;
       }
 
-
       .page {
-
         padding:
           28px 18px 24px;
 
@@ -773,16 +621,17 @@
           26px;
       }
 
+      .logo {
+        width:
+          min(70%, 260px);
+      }
 
       .cta {
-
         padding:
           16px;
       }
 
-
       .cta-title {
-
         font-size:
           1.05rem;
       }
@@ -793,28 +642,12 @@
 
 </head>
 
-
 <body>
-
 
   <main class="page">
 
-
-    <!-- ==========================
-         FORMAS DECORATIVAS
-    =========================== -->
-
-
     <div class="shape two"></div>
-
     <div class="shape three"></div>
-
-
-
-    <!-- ==========================
-         FOLHA ESQUERDA
-    =========================== -->
-
 
     <svg
       class="leaf left"
@@ -829,7 +662,6 @@
         fill="none"
       />
 
-
       <ellipse
         cx="40"
         cy="34"
@@ -839,7 +671,6 @@
         transform="rotate(-38 40 34)"
       />
 
-
       <ellipse
         cx="58"
         cy="48"
@@ -848,7 +679,6 @@
         fill="#245642"
         transform="rotate(34 58 48)"
       />
-
 
       <ellipse
         cx="35"
@@ -860,13 +690,6 @@
       />
 
     </svg>
-
-
-
-    <!-- ==========================
-         FOLHA DIREITA
-    =========================== -->
-
 
     <svg
       class="leaf right"
@@ -881,7 +704,6 @@
         fill="none"
       />
 
-
       <ellipse
         cx="40"
         cy="34"
@@ -891,7 +713,6 @@
         transform="rotate(-38 40 34)"
       />
 
-
       <ellipse
         cx="58"
         cy="48"
@@ -900,7 +721,6 @@
         fill="#245642"
         transform="rotate(34 58 48)"
       />
-
 
       <ellipse
         cx="35"
@@ -913,13 +733,6 @@
 
     </svg>
 
-
-
-    <!-- ==========================
-         LOGOMARCA
-    =========================== -->
-
-
     <div class="logo-wrap">
 
       <img
@@ -930,19 +743,11 @@
 
     </div>
 
-
-
-    <!-- ==========================
-         APRESENTAÇÃO
-    =========================== -->
-
-
     <div class="eyebrow">
 
       Seja bem-vinda
 
     </div>
-
 
     <h1>
 
@@ -951,7 +756,6 @@
       se compreender melhor.
 
     </h1>
-
 
     <p class="intro">
 
@@ -965,25 +769,11 @@
 
     </p>
 
-
-
-    <!-- ==========================
-         DIVISOR
-    =========================== -->
-
-
     <div class="divider">
 
       ✦
 
     </div>
-
-
-
-    <!-- ==========================
-         WHATSAPP
-    =========================== -->
-
 
     <a
 
@@ -999,54 +789,32 @@
 
     >
 
-
-      <!-- ÍCONE -->
-
-
       <span
         class="icon"
         aria-hidden="true"
       >
-
 
         <svg
           viewBox="0 0 24 24"
           fill="none"
         >
 
-
           <path
-
             d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-4.9A8.4 8.4 0 1 1 20.5 11.7Z"
-
             stroke="currentColor"
-
             stroke-width="1.8"
-
           />
-
 
           <path
-
             d="M8.3 7.9c.3-.7.6-.7 1-.7h.3c.2 0 .4 0 .6.5l.8 1.9c.1.3.1.5-.1.7l-.6.7c-.2.2-.3.4-.1.7.4.8 1 1.5 1.8 2 .8.6 1.5.8 1.8 1 .3.1.5.1.7-.1l.9-1.1c.2-.2.4-.3.7-.2l1.9.9c.3.2.5.2.5.4 0 .2 0 1-.4 1.8-.4.8-1.7 1.5-2.4 1.6-.7.1-1.6.2-4.5-.9-3.7-1.5-6.1-5.3-6.3-5.6-.2-.3-1.5-2-.1-4.2Z"
-
             fill="currentColor"
-
           />
-
 
         </svg>
 
-
       </span>
 
-
-
-      <!-- TEXTO DO BOTÃO -->
-
-
       <span class="cta-text">
-
 
         <span class="cta-title">
 
@@ -1054,17 +822,13 @@
 
         </span>
 
-
         <span class="cta-sub">
 
           Fale comigo pelo WhatsApp
 
         </span>
 
-
       </span>
-
-
 
       <span class="arrow">
 
@@ -1072,18 +836,9 @@
 
       </span>
 
-
     </a>
 
-
-
-    <!-- ==========================
-         ATENDIMENTOS
-    =========================== -->
-
-
     <div class="info">
-
 
       <span class="pill">
 
@@ -1091,22 +846,13 @@
 
       </span>
 
-
       <span class="pill">
 
         Atendimento online
 
       </span>
 
-
     </div>
-
-
-
-    <!-- ==========================
-         TEXTO COMPLEMENTAR
-    =========================== -->
-
 
     <p class="note">
 
@@ -1115,13 +861,6 @@
       e entender como a psicanálise pode fazer parte do seu processo.
 
     </p>
-
-
-
-    <!-- ==========================
-         INSTAGRAM
-    =========================== -->
-
 
     <a
 
@@ -1141,15 +880,7 @@
 
     </a>
 
-
-
-    <!-- ==========================
-         RODAPÉ
-    =========================== -->
-
-
     <footer>
-
 
       <div>
 
@@ -1157,13 +888,9 @@
 
       </div>
 
-
-
       <div class="creditos">
 
-
         Criação:
-
 
         <a
 
@@ -1181,15 +908,11 @@
 
         </a>
 
-
       </div>
-
 
     </footer>
 
-
   </main>
-
 
 </body>
 
