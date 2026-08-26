@@ -21,6 +21,7 @@
   <title>Kátia Gouveia | Psicanalista Clínica</title>
 
   <style>
+
     :root {
       --verde: #245642;
       --salvia: #8FAF9B;
@@ -71,6 +72,8 @@
       overflow-x: hidden;
     }
 
+    /* CONTAINER PRINCIPAL */
+
     .page {
       position: relative;
 
@@ -89,62 +92,53 @@
       box-shadow:
         0 22px 60px rgba(36, 86, 66, .14);
 
-      padding:
-        34px 24px 28px;
+      padding: 34px 24px 28px;
 
       overflow: hidden;
 
-      backdrop-filter:
-        blur(8px);
+      backdrop-filter: blur(8px);
     }
+
+    /* FORMAS DECORATIVAS */
 
     .shape {
       position: absolute;
-
       border-radius: 999px;
-
       pointer-events: none;
-
       filter: blur(.2px);
     }
 
     .shape.two {
       width: 220px;
-
       height: 110px;
 
       left: -75px;
-
       bottom: -55px;
 
-      background:
-        var(--verde);
+      background: var(--verde);
 
-      transform:
-        rotate(-8deg);
+      transform: rotate(-8deg);
     }
 
     .shape.three {
       width: 170px;
-
       height: 85px;
 
       left: -55px;
-
       bottom: -10px;
 
       background:
         rgba(143, 175, 155, .65);
 
-      transform:
-        rotate(6deg);
+      transform: rotate(6deg);
     }
+
+    /* FOLHAS */
 
     .leaf {
       position: absolute;
 
       width: 88px;
-
       height: 88px;
 
       opacity: .18;
@@ -154,74 +148,63 @@
 
     .leaf.left {
       left: -14px;
-
       top: 120px;
 
-      transform:
-        rotate(-18deg);
+      transform: rotate(-18deg);
     }
 
     .leaf.right {
       right: -12px;
-
       bottom: 145px;
 
-      transform:
-        rotate(22deg);
+      transform: rotate(22deg);
     }
+
+    /* LOGO */
 
     .logo-wrap {
       position: relative;
-
       z-index: 2;
 
       display: flex;
-
       justify-content: center;
 
-      margin:
-        0 auto 12px;
+      margin: 0 auto 12px;
     }
 
     .logo {
-      width:
-        min(74%, 300px);
+      width: min(74%, 300px);
 
       display: block;
 
-      mix-blend-mode:
-        multiply;
+      mix-blend-mode: multiply;
     }
+
+    /* BOAS-VINDAS */
 
     .eyebrow {
       position: relative;
-
       z-index: 2;
 
-      margin:
-        8px 0 8px;
+      margin: 8px 0 8px;
 
       text-align: center;
 
-      color:
-        var(--vinho);
+      color: var(--vinho);
 
-      font-size:
-        .78rem;
+      font-size: .78rem;
 
-      letter-spacing:
-        .18em;
+      letter-spacing: .18em;
 
-      text-transform:
-        uppercase;
+      text-transform: uppercase;
 
-      font-weight:
-        700;
+      font-weight: 700;
     }
+
+    /* TÍTULO */
 
     h1 {
       position: relative;
-
       z-index: 2;
 
       margin: 0;
@@ -236,82 +219,69 @@
       font-size:
         clamp(2rem, 7vw, 3rem);
 
-      line-height:
-        1.06;
+      line-height: 1.06;
 
-      color:
-        var(--verde);
+      color: var(--verde);
 
-      font-weight:
-        500;
+      font-weight: 500;
     }
+
+    /* INTRODUÇÃO */
 
     .intro {
       position: relative;
-
       z-index: 2;
 
-      margin:
-        18px auto 22px;
+      margin: 18px auto 22px;
 
-      max-width:
-        400px;
+      max-width: 400px;
 
-      text-align:
-        center;
+      text-align: center;
 
-      font-size:
-        1rem;
+      font-size: 1rem;
 
-      line-height:
-        1.65;
+      line-height: 1.65;
 
-      color:
-        #4b514d;
+      color: #4b514d;
     }
 
     .intro strong {
-      color:
-        var(--vinho);
+      color: var(--vinho);
     }
+
+    /* DIVISOR */
 
     .divider {
       position: relative;
-
       z-index: 2;
 
       display: flex;
 
       align-items: center;
-
       justify-content: center;
 
       gap: 10px;
 
-      margin:
-        0 auto 24px;
+      margin: 0 auto 24px;
 
-      color:
-        var(--dourado);
+      color: var(--dourado);
     }
 
     .divider::before,
     .divider::after {
       content: "";
 
-      width:
-        52px;
-
-      height:
-        1px;
+      width: 52px;
+      height: 1px;
 
       background:
         rgba(184, 154, 90, .75);
     }
 
+    /* BOTÃO WHATSAPP */
+
     .cta {
       position: relative;
-
       z-index: 2;
 
       display: flex;
@@ -334,11 +304,9 @@
       border:
         1px solid rgba(255, 255, 255, .2);
 
-      padding:
-        18px;
+      padding: 18px;
 
-      border-radius:
-        22px;
+      border-radius: 22px;
 
       box-shadow:
         0 12px 24px
@@ -350,8 +318,7 @@
     }
 
     .cta:hover {
-      transform:
-        translateY(-2px);
+      transform: translateY(-2px);
 
       box-shadow:
         0 16px 30px
@@ -359,23 +326,15 @@
     }
 
     .icon {
-      width:
-        48px;
+      width: 48px;
+      height: 48px;
 
-      height:
-        48px;
+      border-radius: 50%;
 
-      border-radius:
-        50%;
+      display: grid;
+      place-items: center;
 
-      display:
-        grid;
-
-      place-items:
-        center;
-
-      flex:
-        0 0 48px;
+      flex: 0 0 48px;
 
       background:
         rgba(255, 255, 255, .13);
@@ -386,25 +345,18 @@
     }
 
     .icon svg {
-      width:
-        25px;
-
-      height:
-        25px;
+      width: 25px;
+      height: 25px;
     }
 
     .cta-text {
-      display:
-        flex;
+      display: flex;
 
-      flex-direction:
-        column;
+      flex-direction: column;
 
-      gap:
-        2px;
+      gap: 2px;
 
-      min-width:
-        0;
+      min-width: 0;
     }
 
     .cta-title {
@@ -413,54 +365,43 @@
         "Times New Roman",
         serif;
 
-      font-size:
-        1.15rem;
+      font-size: 1.15rem;
 
-      letter-spacing:
-        .02em;
+      letter-spacing: .02em;
     }
 
     .cta-sub {
-      font-size:
-        .85rem;
+      font-size: .85rem;
 
       color:
         rgba(255, 255, 255, .78);
     }
 
     .arrow {
-      margin-left:
-        auto;
+      margin-left: auto;
 
-      font-size:
-        1.6rem;
+      font-size: 1.6rem;
 
-      line-height:
-        1;
+      line-height: 1;
 
-      opacity:
-        .9;
+      opacity: .9;
     }
+
+    /* ATENDIMENTOS */
 
     .info {
       position: relative;
-
       z-index: 2;
 
-      margin-top:
-        16px;
+      margin-top: 16px;
 
-      display:
-        flex;
+      display: flex;
 
-      justify-content:
-        center;
+      justify-content: center;
 
-      gap:
-        8px;
+      gap: 8px;
 
-      flex-wrap:
-        wrap;
+      flex-wrap: wrap;
     }
 
     .pill {
@@ -471,183 +412,144 @@
         1px solid
         rgba(116, 63, 74, .16);
 
-      color:
-        var(--vinho);
+      color: var(--vinho);
 
-      padding:
-        8px 12px;
+      padding: 8px 12px;
 
-      border-radius:
-        999px;
+      border-radius: 999px;
 
-      font-size:
-        .82rem;
+      font-size: .82rem;
 
-      font-weight:
-        600;
+      font-weight: 600;
     }
+
+    /* TEXTO COMPLEMENTAR */
 
     .note {
-      position:
-        relative;
+      position: relative;
+      z-index: 2;
 
-      z-index:
-        2;
+      margin: 24px auto 0;
 
-      margin:
-        24px auto 0;
+      text-align: center;
 
-      text-align:
-        center;
+      max-width: 390px;
 
-      max-width:
-        390px;
+      color: #5a625d;
 
-      color:
-        #5a625d;
+      font-size: .9rem;
 
-      font-size:
-        .9rem;
-
-      line-height:
-        1.6;
+      line-height: 1.6;
     }
 
+    /* INSTAGRAM */
+
     .instagram {
-      position:
-        relative;
+      position: relative;
+      z-index: 2;
 
-      z-index:
-        2;
+      display: inline-flex;
 
-      display:
-        inline-flex;
+      align-items: center;
+      justify-content: center;
 
-      align-items:
-        center;
+      margin: 18px auto 0;
 
-      justify-content:
-        center;
+      width: 100%;
 
-      margin:
-        18px auto 0;
+      color: var(--verde);
 
-      width:
-        100%;
+      text-decoration: none;
 
-      color:
-        var(--verde);
+      font-weight: 700;
 
-      text-decoration:
-        none;
+      font-size: .92rem;
 
-      font-weight:
-        700;
-
-      font-size:
-        .92rem;
-
-      transition:
-        color .2s ease;
+      transition: color .2s ease;
     }
 
     .instagram:hover {
-      color:
-        var(--vinho);
+      color: var(--vinho);
     }
 
+    /* RODAPÉ */
+
     footer {
-      position:
-        relative;
+      position: relative;
+      z-index: 2;
 
-      z-index:
-        2;
+      margin-top: 26px;
 
-      margin-top:
-        26px;
+      text-align: center;
 
-      text-align:
-        center;
+      font-size: .74rem;
 
-      font-size:
-        .74rem;
-
-      color:
-        #6f7672;
+      color: #6f7672;
     }
 
     .creditos {
-      margin-top:
-        7px;
+      margin-top: 7px;
 
-      font-size:
-        .72rem;
+      font-size: .72rem;
     }
 
     .creditos a {
-      color:
-        var(--dourado);
+      color: var(--dourado);
 
-      text-decoration:
-        none;
+      text-decoration: none;
 
-      font-weight:
-        700;
+      font-weight: 700;
 
-      transition:
-        opacity .2s ease;
+      transition: opacity .2s ease;
     }
 
     .creditos a:hover {
-      opacity:
-        .7;
+      opacity: .7;
 
-      text-decoration:
-        underline;
+      text-decoration: underline;
     }
+
+    /* RESPONSIVIDADE */
 
     @media (max-width: 380px) {
 
       body {
-        padding:
-          14px 10px;
+        padding: 14px 10px;
       }
 
       .page {
-        padding:
-          28px 18px 24px;
+        padding: 28px 18px 24px;
 
-        border-radius:
-          26px;
+        border-radius: 26px;
       }
 
       .logo {
-        width:
-          min(70%, 260px);
+        width: min(70%, 260px);
       }
 
       .cta {
-        padding:
-          16px;
+        padding: 16px;
       }
 
       .cta-title {
-        font-size:
-          1.05rem;
+        font-size: 1.05rem;
       }
-
     }
 
   </style>
-
 </head>
 
 <body>
 
   <main class="page">
 
+    <!-- FORMAS DECORATIVAS -->
+
     <div class="shape two"></div>
     <div class="shape three"></div>
+
+
+    <!-- FOLHA ESQUERDA -->
 
     <svg
       class="leaf left"
@@ -691,6 +593,9 @@
 
     </svg>
 
+
+    <!-- FOLHA DIREITA -->
+
     <svg
       class="leaf right"
       viewBox="0 0 100 100"
@@ -733,6 +638,9 @@
 
     </svg>
 
+
+    <!-- LOGOMARCA -->
+
     <div class="logo-wrap">
 
       <img
@@ -743,18 +651,16 @@
 
     </div>
 
+
+    <!-- APRESENTAÇÃO -->
+
     <div class="eyebrow">
-
       Seja bem-vinda
-
     </div>
 
     <h1>
-
       Um espaço para<br>
-
       se compreender melhor.
-
     </h1>
 
     <p class="intro">
@@ -764,19 +670,21 @@
       <strong>mulheres</strong>
 
       que desejam olhar para si e para a própria
-
       história com novos sentidos.
 
     </p>
 
+
+    <!-- DIVISOR -->
+
     <div class="divider">
-
       ✦
-
     </div>
 
-    <a
 
+    <!-- WHATSAPP -->
+
+    <a
       class="cta"
 
       href="https://wa.me/5527995337988?text=Olá%2C%20Kátia!%20Conheci%20seu%20trabalho%20pelo%20Instagram%20e%20gostaria%20de%20saber%20mais."
@@ -786,7 +694,6 @@
       rel="noopener noreferrer"
 
       aria-label="Conhecer o trabalho de Kátia Gouveia pelo WhatsApp"
-
     >
 
       <span
@@ -814,56 +721,55 @@
 
       </span>
 
+
       <span class="cta-text">
 
         <span class="cta-title">
-
           Conhecer meu trabalho
-
         </span>
 
         <span class="cta-sub">
-
           Fale comigo pelo WhatsApp
-
         </span>
 
       </span>
 
+
       <span class="arrow">
-
         ›
-
       </span>
 
     </a>
 
+
+    <!-- MODALIDADES -->
+
     <div class="info">
 
       <span class="pill">
-
         Atendimento presencial
-
       </span>
 
       <span class="pill">
-
         Atendimento online
-
       </span>
 
     </div>
 
+
+    <!-- TEXTO ALTERADO -->
+
     <p class="note">
 
-      Um primeiro contato para conhecer minha forma de trabalho
-
-      e entender como a psicanálise pode fazer parte do seu processo.
+      Um primeiro contato para conhecer meu trabalho
+      e entender como a psicanálise pode acompanhar o seu processo.
 
     </p>
 
-    <a
 
+    <!-- INSTAGRAM -->
+
+    <a
       class="instagram"
 
       href="https://www.instagram.com/katiagouveia.psi/"
@@ -873,19 +779,19 @@
       rel="noopener noreferrer"
 
       aria-label="Instagram de Kátia Gouveia"
-
     >
 
       @katiagouveia.psi
 
     </a>
 
+
+    <!-- RODAPÉ -->
+
     <footer>
 
       <div>
-
         © 2026 Kátia Gouveia · Psicanalista Clínica
-
       </div>
 
       <div class="creditos">
@@ -893,7 +799,6 @@
         Criação:
 
         <a
-
           href="https://rodriguesdigital.tec.br/"
 
           target="_blank"
@@ -901,7 +806,6 @@
           rel="noopener noreferrer"
 
           aria-label="Site da Rodrigues Digital"
-
         >
 
           Rodrigues Digital
@@ -915,5 +819,4 @@
   </main>
 
 </body>
-
 </html>
